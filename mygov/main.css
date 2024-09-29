@@ -1,0 +1,365 @@
+:root {
+    --font-size: 15px;
+    --font-color: #8b8b8b;
+    --img-width: 70px;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --max-width: 400px;
+    --height: 500px;
+    --align-items: center;
+    --primary-background-color: #022e5a;
+    --secondary-background-color: #ccc;
+    --border-radius: 30px;
+
+
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    gap: 30px;
+    font-family: var(--font-family);
+
+
+}
+
+.navigation ul li,
+.navigation ul li a {
+    width: auto;
+    list-style: none;
+    text-decoration: none;
+    font-size: var(--font-size);
+    color: var(--font-color);
+
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    height: auto;
+    padding: 50px;
+
+
+}
+
+.box {
+    display: flex;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    width: 950px;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.right-box {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    align-content: center;
+    /* padding:  3% 10% 3% 10%; */
+    height: 600px;
+    width: 500px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-box-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-img {
+    width: 60px;
+}
+
+.title-img {
+    width: 120px;
+}
+
+.title-exp {
+    text-align: center;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    color: var(--font-color);
+    width: 300px;
+}
+
+.log-in-box {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-between;
+    align-self: center;
+    padding: 0;
+    list-style: none;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    border-radius: 20px;
+    height: 30px;
+    width: 290px;
+    text-align: center;
+    background: linear-gradient(360deg, var(--secondary-background-color), #ffffff3f, #fff);
+    box-shadow: 0 5px 5px var(--shadow-color);
+}
+
+.submit-box {
+    width: 200px;
+    background: linear-gradient(180deg, var(--primary-background-color), #024d99);
+    border-top-right-radius: 20px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.submit-box a {
+    color: #fff;
+}
+
+.QR-box {
+    width: 150px;
+    padding: 5px;
+
+}
+
+.id-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+}
+
+.tell-input {
+    width: 280px;
+    height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    margin-top: 10px;
+    direction: ltr;
+    outline: none;
+}
+
+.tell-img {
+    width: 20px;
+    transform: translateY(-25px) translateX(-5px);
+}
+
+.text-input {
+    width: 280px;
+    height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    margin-top: 10px;
+    direction: rtl;
+    outline: none;
+}
+
+.text-input::placeholder {
+    transform: translateX(-30px);
+
+}
+
+.capt-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tick-img {
+    transform: translateY(-25px) translateX(65px);
+}
+
+.audio-img {
+    transform: translateY(-23px) translateX(-170px);
+
+}
+
+.refresh-img {
+    transform: translateY(-23px) translateX(-120px);
+}
+
+.security-img {
+    transform: translateY(-23px);
+    width: 80px;
+}
+
+
+
+.log-in-button {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-self: center;
+    text-align: center;
+    width: 200px;
+    max-height: 20px;
+    padding: 15px;
+    margin-top: 35px;
+    border-radius: 30px;
+    background: linear-gradient(180deg, #b3b2b2, var(--secondary-background-color));
+}
+
+.log-in-button a {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--font-family);
+    font-size: 18px;
+}
+
+.log-in-button img {
+    width: 50px;
+    transform: translate3d(10px, -10px, 0)
+}
+
+.privacy-terms {
+    text-align: center;
+    color: var(--font-color);
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+
+.privacy-terms a {
+    text-decoration: none;
+    color: #0471dd;
+    font-size: 17px;
+    border-bottom: 2px solid #0471dd;
+}
+
+.app-download {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+    gap: -10px;
+}
+
+.app-download p {
+    font-size: 18px;
+    align-self: center;
+}
+
+.app-download a img {
+    width: 80px;
+}
+
+
+
+.left-box {
+    background-color: var(--primary-background-color);
+    width: 500px;
+    height: 600px;
+    display: block;
+
+
+}
+
+.page-download-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.download-logo-img {
+    width: 80px;
+}
+
+.page-download-explain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.page-download-explain h1 {
+    color: #fff;
+    font-weight: var(--font-family);
+}
+
+.page-download-explain p {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+
+@media screen and (max-width:450px) {
+
+    /* for tiny mib  */
+    .navigation ul {
+        justify-content: center;
+    }
+
+    .box {
+        min-width: 350px;
+    }
+
+    .left-box {
+        display: none;
+    }
+}
+
+@media screen and (min-width:450px) {
+
+    /* for tiny mib  */
+    .navigation ul {
+        justify-content: center;
+    }
+
+    .box {
+        width: 400px;
+    }
+
+    .left-box {
+        display: none;
+    }
+}
+
+@media screen and (min-width:600px) {
+
+    /* for tiny tab */
+    .navigation ul {
+        justify-content: center;
+    }
+
+    .box {
+        width: 500px;
+    }
+
+    .left-box {
+        display: none;
+    }
+}
+
+@media screen and (min-width:980px) {
+
+    /* shows the left box */
+    .navigation ul {
+        justify-content: start;
+    }
+
+    .box {
+        width: auto;
+    }
+
+    .left-box {
+        display: block;
+    }
+
+    .app-download {
+        display: none;
+    }
+}
